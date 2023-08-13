@@ -45,3 +45,14 @@ const accordionItemHeaders = document.querySelectorAll(
   
   // Initial update to handle scroll position on load
   updateParallax();
+
+
+  const slideText = document.querySelector('.slide-text');
+
+slideText.addEventListener('mouseenter', () => {
+  slideText.style.transform = 'rotateY(180deg)';
+});
+
+slideText.addEventListener('mouseleave', () => {
+  slideText.style.transform = 'rotateY(0)';
+});
